@@ -22,7 +22,6 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/email_verification/send', 'EmailVerificationController@send')->name('email_verification.send');
     Route::group(['middleware' => 'email_verified'], function() {
 
-        });
     });
 
 });
